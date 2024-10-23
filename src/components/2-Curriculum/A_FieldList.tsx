@@ -34,7 +34,7 @@ const FieldList = () => {
           <SlideIn key={index} delay={index * 0.3}>
             <div
               onClick={() => move(item.screen, "next")}
-              className="h-fit flex gap-4 border border-transparent hover:border-white ms-5 pe-5 rounded-md"
+              className="h-fit flex gap-4 border border-transparent hover:border-white ms-5 pe-5 rounded-md cursor-pointer"
             >
               {/* Image */}
               <div className="border border-gray-200/80 rounded-md">
