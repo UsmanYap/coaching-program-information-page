@@ -1,7 +1,9 @@
 import CurriculumList from "@components/5-GameCurriculum/A_CurriculumList";
+import BackgroundLogo from "@components/_shared/BackgroundLogo";
 import Footer from "@components/_shared/Footer";
 import ScreenTitle from "@components/_shared/ScreenTitle";
 import { IoGameController } from "react-icons/io5";
+import gameDev from "@assets/gameDev.webp";
 
 const GameCurriculum = () => {
   return (
@@ -18,6 +20,13 @@ const GameCurriculum = () => {
       <div className="mt-auto">
         <Footer prevPage={{ label: "Kurikulum", to: "curriculum" }} />
       </div>
+
+      <img
+        src={gameDev}
+        className="absolute -z-20 bottom-28 -right-24 scale-100 opacity-15"
+      />
+
+      <BackgroundLogo className="-left-56" />
     </div>
   );
 };

@@ -1,7 +1,9 @@
 import CurriculumList from "@components/4-MobileCurriculum/A_CurriculumList";
+import BackgroundLogo from "@components/_shared/BackgroundLogo";
 import Footer from "@components/_shared/Footer";
 import ScreenTitle from "@components/_shared/ScreenTitle";
 import { FaMobileAlt } from "react-icons/fa";
+import mobileDev from "@assets/mobileDev.webp";
 
 const MobileCurriculum = () => {
   return (
@@ -18,6 +20,13 @@ const MobileCurriculum = () => {
       <div className="mt-auto">
         <Footer prevPage={{ label: "Kurikulum", to: "curriculum" }} />
       </div>
+
+      <img
+        src={mobileDev}
+        className="absolute -z-20 bottom-24 -right-24 scale-100 opacity-15"
+      />
+
+      <BackgroundLogo className="-left-56" />
     </div>
   );
 };
