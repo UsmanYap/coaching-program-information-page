@@ -17,7 +17,7 @@ const WelcomeText = () => {
         </section>
 
         {/* UKM Programming Text */}
-        <DiagonalAppear delay={1}>
+        <DiagonalAppear delay={1} duration={1.5}>
           <section className="relative flex flex-col text-[2rem] font-semibold text-4xl">
             {/* White Text Layer */}
             <div className="absolute inset-0 text-procom-orange-light clip-diagonal flex flex-col">

@@ -12,14 +12,17 @@ const DiagonalAppear = (props: Props) => {
   const { children, className, delay = 0, duration = 1 } = props;
 
   const diagonalAppearAnimation = {
-    initial: { clipPath: "polygon(0 0, 0 0, 0 0, 0 0)", opacity: 0 },
+    initial: {
+      clipPath: "polygon(65% 0, 65% 0, 35% 100%, 35% 100%)",
+      opacity: 0,
+    },
     animate: {
       clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
       opacity: 1,
       transition: { duration: duration, delay },
     },
     exit: {
-      clipPath: "polygon(0 0, 0 0, 0 0, 0 0)",
+      clipPath: "polygon(0 0, 0 0, 100% 100%, 100% 100%)",
       opacity: 0,
       transition: { duration: duration },
     },
