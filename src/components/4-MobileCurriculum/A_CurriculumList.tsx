@@ -1,26 +1,10 @@
 import Appear from "@common/components/Animated/Appear";
 import LineAppear from "@common/components/Animated/LineAppear";
 import TrainAppear from "@common/components/Animated/TrainAppear";
+import inject from "@common/utils/inject";
 
 const CurriculumList = () => {
-  const steps: Steps[] = [
-    {
-      title: "Pengenalan Dart",
-      description:
-        "Belajar dasar-dasar Dart, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
-    },
-    {
-      title: "Pengenalan Flutter",
-      description:
-        "Belajar dasar-dasar Flutter, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
-    },
-
-    {
-      title: "Flutter Lanjutan",
-      description:
-        "Belajar Flutter Layout, Flutter Navigation, dan Flutter State Management.",
-    },
-  ];
+  const steps: Steps[] = inject("mobileCurriculum", "steps");
 
   return (
     <div className="flex h-full">

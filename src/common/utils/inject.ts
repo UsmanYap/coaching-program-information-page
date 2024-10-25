@@ -1,6 +1,8 @@
 import { Screens } from "@common/types";
 import introduction from "@data/1-introduction.json";
 import webCurriculum from "@data/3-webCurriculum.json";
+import mobileCurriculum from "@data/4-mobileCurriculum.json";
+import gameCurriculum from "@data/5-gameCurriculum.json";
 
 type JsonData = Record<string, unknown>;
 
@@ -15,10 +17,10 @@ function inject<T = string>(jsonName: Screens, propertyName: string): T {
       jsonObject = webCurriculum;
       break;
     case "mobileCurriculum":
-      jsonObject = webCurriculum;
+      jsonObject = mobileCurriculum;
       break;
     case "gameCurriculum":
-      jsonObject = webCurriculum;
+      jsonObject = gameCurriculum;
       break;
 
     default:

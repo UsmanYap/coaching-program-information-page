@@ -1,24 +1,10 @@
 import Appear from "@common/components/Animated/Appear";
 import LineAppear from "@common/components/Animated/LineAppear";
 import TrainAppear from "@common/components/Animated/TrainAppear";
+import inject from "@common/utils/inject";
 
 const CurriculumList = () => {
-  const steps: Steps[] = [
-    {
-      title: "Pengenalan Unity",
-      description:
-        "Belajar dasar-dasar Unity, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
-    },
-    {
-      title: "Pengenalan C#",
-      description:
-        "Belajar dasar-dasar C#, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
-    },
-    {
-      title: "Unity Lanjutan",
-      description: "Belajar Unity Physics, Unity Animation, dan Unity UI.",
-    },
-  ];
+  const steps: Steps[] = inject("gameCurriculum", "steps");
 
   return (
     <div className="flex h-full">
