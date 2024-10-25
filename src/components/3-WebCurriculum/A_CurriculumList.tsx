@@ -1,16 +1,20 @@
 import Appear from "@common/components/Animated/Appear";
 import LineAppear from "@common/components/Animated/LineAppear";
-import TrainAppear from "@common/components/Animated/TrainAppear";
 import inject from "@common/utils/inject";
+import { CurriculumItemContent } from "@common/types";
+import CurriculumItem from "./A1_CurriculumItem";
 
 const CurriculumList = () => {
-  const steps: Steps[] = inject("webCurriculum", "steps");
+  const steps: CurriculumItemContent[] = inject("webCurriculum", "steps");
 
   return (
     <div className="flex h-full">
-      <div className="mx-auto mt-5 flex flex-col text-white overflow-y-scroll">
+      <div className="mx-auto mt-5 flex flex-col gap-4 text-white overflow-y-scroll w-full">
         {steps.map((item, index) => (
-          <div key={index} className="relative flex items-start py-4">
+          <div
+            key={index}
+            className="relative flex items-start px-4 w-full text-left cursor-pointer"
+          >
             {/* Circle with step number */}
             <Appear delay={(index + 1) * 0.45} duration={0.3}>
               <div className="bg-white rounded-full w-7 h-7 flex items-center justify-center z-10">
@@ -24,33 +28,16 @@ const CurriculumList = () => {
                 direction="vertical"
                 delay={(index + 1) * 0.5}
                 duration={0.4}
-                className="absolute left-3.5 top-7 w-px h-full bg-white -z-10"
+                className="absolute left-[1.82rem] top-7 w-px h-full bg-white -z-10"
               />
             )}
 
-            {/* Step Content */}
-            <div className="ms-4 w-72">
-              <TrainAppear delay={(index + 1) * 0.45 + 0.4}>
-                <span className="font-semibold text-lg">{item.title}</span>
-              </TrainAppear>
-              <TrainAppear
-                delay={(index + 1) * 0.45 + 0.9}
-                from="top"
-                duration={0.3}
-              >
-                <div className="opacity-90">{item.description}</div>
-              </TrainAppear>
-            </div>
+            <CurriculumItem item={item} index={index} />
           </div>
         ))}
       </div>
     </div>
   );
-};
-
-type Steps = {
-  title: string;
-  description: string;
 };
 
 export default CurriculumList;

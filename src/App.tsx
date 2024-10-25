@@ -36,7 +36,7 @@ function App() {
   }, [currentScreen]);
 
   return (
-    <div className="w-full h-full max-w-[428px] flex mx-auto overflow-hidden md:border">
+    <div className="w-full h-full max-w-[428px] flex mx-auto overflow-hidden md:border-x">
       <ScreenTransition disabled={isFirstLoad}>
         {screens[currentScreen]}
       </ScreenTransition>
