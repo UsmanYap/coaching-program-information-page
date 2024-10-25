@@ -17,7 +17,6 @@ function inject<T = string>(jsonName: Screens, propertyName: string): T {
     case "mobileCurriculum":
       jsonObject = webCurriculum;
       break;
-
     case "gameCurriculum":
       jsonObject = webCurriculum;
       break;

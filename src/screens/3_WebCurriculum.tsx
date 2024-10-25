@@ -18,7 +18,9 @@ const WebCurriculum = () => {
         <CurriculumList />
       </div>
       <div className="mt-auto">
-        <Footer prevPage={{ label: "Kurikulum", to: "curriculum" }} />
+        <Footer
+          prevPage={{ label: "Kurikulum", to: "curriculum", direction: "left" }}
+        />
       </div>
 
       <img

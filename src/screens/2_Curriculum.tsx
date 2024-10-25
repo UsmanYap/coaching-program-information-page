@@ -9,7 +9,9 @@ const CurriculumScreen = () => {
         <FieldList />
       </div>
       <div className="mt-auto">
-        <Footer prevPage={{ label: "Home", to: "introduction" }} />
+        <Footer
+          prevPage={{ label: "Home", to: "introduction", direction: "left" }}
+        />
       </div>
 
       <BackgroundLogo className="-right-56" />

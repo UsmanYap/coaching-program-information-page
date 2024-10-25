@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Screens } from "@common/types";
 import IntroductionScreen from "@screens/1_Introduction";
@@ -8,9 +7,10 @@ import WebCurriculum from "@screens/3_WebCurriculum";
 import MobileCurriculum from "@screens/4_MobileCurriculum";
 import GameCurriculum from "@screens/5_GameCurriculum";
 import useQueryState from "@common/hooks/useQueryState";
+import ScreenTransition from "@common/components/Animated/ScreenTransition";
 
 function App() {
-  const { currentScreen, move, lastAction } = useScreenStore();
+  const { currentScreen, move } = useScreenStore();
   const [isFirstLoad, setIsFirstLoad] = useState(true);
   const [currentPage, setCurrentPage] = useQueryState<Screens>("page");
 
@@ -27,7 +27,7 @@ function App() {
       setIsFirstLoad(false);
 
       if (currentPage) {
-        move(currentPage, "next");
+        move(currentPage, "next", "left");
       }
     }
   }, []);
@@ -36,25 +36,11 @@ function App() {
     setCurrentPage(currentScreen);
   }, [currentScreen]);
 
-  const screenTransition = {
-    initial: isFirstLoad ? {} : { x: lastAction === "next" ? "100%" : "-100%" },
-    animate: { x: 0 },
-    exit: { x: lastAction === "next" ? "-100%" : "100%" },
-    transition: { type: "tween", duration: 1 },
-  };
-
   return (
-    <div className="w-full h-full max-w-[428px] flex overflow-hidden mx-auto border border-gray-200/30">
-      <motion.div
-        className="w-full h-full bg-primary"
-        key={currentScreen}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        variants={screenTransition}
-      >
+    <div className="w-full h-full max-w-[428px] flex mx-auto overflow-hidden md:border">
+      <ScreenTransition disabled={isFirstLoad}>
         {screens[currentScreen]}
-      </motion.div>
+      </ScreenTransition>
     </div>
   );
 }

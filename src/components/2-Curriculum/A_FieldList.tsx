@@ -33,7 +33,7 @@ const FieldList = () => {
         {fieldList.map((item, index) => (
           <SlideIn key={index} delay={index * 0.3}>
             <div
-              onClick={() => move(item.screen, "next")}
+              onClick={() => move(item.screen, "next", "right")}
               className="h-fit flex gap-4 border border-transparent hover:border-white ms-5 pe-5 rounded-md cursor-pointer"
             >
               {/* Image */}

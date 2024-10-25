@@ -1,21 +1,27 @@
-import { Screens } from "@common/types";
+import { ScreenDirection, Screens } from "@common/types";
 import { create } from "zustand";
 
 interface ScreenState {
   currentScreen: Screens;
   previousScreen?: Screens;
   lastAction?: "prev" | "next";
-  move: (to: Screens, type: "prev" | "next") => void;
+  lastDirection?: ScreenDirection;
+  move: (
+    to: Screens,
+    action: "prev" | "next",
+    direction: ScreenDirection
+  ) => void;
 }
 
 const useScreenStore = create<ScreenState>()((set) => ({
   currentScreen: "introduction",
-  move: (to, type) =>
+  move: (to, action, direction) =>
     set((state) => ({
       currentScreen: to,
       previousScreen:
-        type === "prev" ? state.currentScreen : state.previousScreen,
-      lastAction: type,
+        action === "prev" ? state.currentScreen : state.previousScreen,
+      lastAction: action,
+      lastDirection: direction,
     })),
 }));
 

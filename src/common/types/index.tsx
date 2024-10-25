@@ -4,3 +4,5 @@ export type Screens =
   | "webCurriculum"
   | "mobileCurriculum"
   | "gameCurriculum";
+
+export type ScreenDirection = "left" | "right" | "up" | "down";

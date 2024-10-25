@@ -14,7 +14,11 @@ const IntroductionScreen = () => {
       </div>
       <div className="mt-auto">
         <Footer
-          nextPage={{ label: "Kurikulum", to: "curriculum" }}
+          nextPage={{
+            label: "Kurikulum",
+            to: "curriculum",
+            direction: "right",
+          }}
           appearDelay={1.5}
         />
       </div>

@@ -1,5 +1,5 @@
 import SlideIn from "@common/components/Animated/SlideIn";
-import { Screens } from "@common/types";
+import { ScreenDirection, Screens } from "@common/types";
 import useScreenStore from "@state/screenNavigation/context";
 
 interface Props {
@@ -22,7 +22,7 @@ const Footer = (props: Props) => {
           <SlideIn from="bottom" delay={appearDelay}>
             <button
               className={buttonClass}
-              onClick={() => move(prevPage.to, "prev")}
+              onClick={() => move(prevPage.to, "prev", prevPage.direction)}
             >
               <span className="text-2xl -mt-0.5">←</span>
               <span className="text-xl">{prevPage.label}</span>
@@ -33,7 +33,7 @@ const Footer = (props: Props) => {
           <SlideIn from="bottom" delay={appearDelay} className="ms-auto">
             <button
               className={buttonClass}
-              onClick={() => move(nextPage.to, "next")}
+              onClick={() => move(nextPage.to, "next", nextPage.direction)}
             >
               <span className="text-xl">{nextPage.label}</span>
               <span className="text-2xl -mt-0.5">→</span>
@@ -48,6 +48,7 @@ const Footer = (props: Props) => {
 type FooterNav = {
   label: string;
   to: Screens;
+  direction: ScreenDirection;
 };
 
 export default Footer;
