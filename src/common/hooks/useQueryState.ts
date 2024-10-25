@@ -13,8 +13,9 @@ function useQueryState<T>(
       }
       try {
         return JSON.parse(paramValue) as T;
-      } catch (error) {
-        console.error("Failed to parse query param value:", error);
+      } catch (err) {
+        console.error(err);
+        return null;
       }
     }
     return null;

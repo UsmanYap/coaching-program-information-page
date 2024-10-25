@@ -8,12 +8,10 @@ import mobileDev from "@assets/mobileDev.webp";
 const MobileCurriculum = () => {
   return (
     <div className="h-full flex flex-col">
-      <div>
-        <ScreenTitle
-          title="Mobile Curriculum"
-          icon={<FaMobileAlt className="w-8 h-8" />}
-        />
-      </div>
+      <ScreenTitle
+        title="Mobile Curriculum"
+        icon={<FaMobileAlt className="w-8 h-8" />}
+      />
       <div className="h-full overflow-hidden">
         <CurriculumList />
       </div>

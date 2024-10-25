@@ -8,15 +8,12 @@ interface Props {
 
 const ScreenTransition = (props: Props) => {
   const { children, disabled } = props;
-  const { currentScreen, lastAction, lastDirection } = useScreenStore();
+  const { currentScreen, lastDirection } = useScreenStore();
 
   const animations = {
     transition: { type: "tween", duration: 1 },
     animate: { x: 0 },
   };
-
-  console.log("lastAction", lastAction);
-  console.log("lastDirection", lastDirection);
 
   const animationMap = {
     left: { axis: "x", initial: "-100%", exit: "100%" },

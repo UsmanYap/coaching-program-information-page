@@ -23,14 +23,13 @@ function App() {
   };
 
   useEffect(() => {
-    if (isFirstLoad) {
-      setIsFirstLoad(false);
-
-      if (currentPage) {
-        move(currentPage, "next", "left");
-      }
+    if (!isFirstLoad || !currentPage) return;
+    if (screens[currentPage]) {
+      move(currentPage, "next", "left");
     }
-  }, []);
+
+    setIsFirstLoad(false);
+  }, [isFirstLoad, currentPage]);
 
   useEffect(() => {
     setCurrentPage(currentScreen);

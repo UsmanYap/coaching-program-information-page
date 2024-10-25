@@ -2,18 +2,17 @@ import CurriculumList from "@components/3-WebCurriculum/A_CurriculumList";
 import BackgroundLogo from "@components/_shared/BackgroundLogo";
 import Footer from "@components/_shared/Footer";
 import ScreenTitle from "@components/_shared/ScreenTitle";
-import { CgWebsite } from "react-icons/cg";
+import { CiGlobe } from "react-icons/ci";
 import webDev from "@assets/webDev.webp";
 
 const WebCurriculum = () => {
   return (
     <div className="h-full flex flex-col">
-      <div>
-        <ScreenTitle
-          title="Web Curriculum"
-          icon={<CgWebsite className="w-8 h-8" />}
-        />
-      </div>
+      <ScreenTitle
+        title="Web Curriculum"
+        icon={<CiGlobe className="w-8 h-8" />}
+      />
+
       <div className="h-full overflow-hidden">
         <CurriculumList />
       </div>
