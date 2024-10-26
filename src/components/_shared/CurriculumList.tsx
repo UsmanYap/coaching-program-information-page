@@ -19,8 +19,6 @@ const CurriculumList = (props: Props) => {
 
   const data = inject<CurriculumData[]>(curriculumMap[subject] as Screens);
 
-  console.log(data);
-
   return (
     <div className="flex h-full">
       <div className="mx-auto mt-5 flex flex-col gap-4 text-white overflow-y-scroll w-full">
