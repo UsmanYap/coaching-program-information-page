@@ -3,6 +3,10 @@ import Rotate from "@common/components/Animated/Rotate";
 import TrainAppear from "@common/components/Animated/TrainAppear";
 import LoadingSpinner from "@common/components/Icons/Spinner";
 import { CurriculumData, Subject } from "@common/types";
+import {
+  addDownloadedFile,
+  isFileHasDownloaded,
+} from "@common/utils/downloadedFileHistory";
 import { downloadFile } from "@common/utils/downloadFile";
 import clsx from "clsx";
 import { useState } from "react";
@@ -22,14 +26,17 @@ const CurriculumItem = (props: Props) => {
   const [fileToDownload, setFileToDownload] = useState<string | null>(null);
   const [iconState, setIconState] = useState<IconState>("idle");
 
+  const baseFilePath = `materi/${subject}/${subFolder}`;
+
   const handleDownloadFile = async (file: string) => {
     setFileToDownload(file);
     setIconState("downloading");
 
-    const filePath = `materi/${subject}/${subFolder}/${file}`;
+    const filePath = `${baseFilePath}/${file}`;
     const res = await downloadFile(filePath, file);
     if (res) {
       setIconState("success");
+      addDownloadedFile(filePath);
     } else {
       setIconState("failed");
     }
@@ -47,6 +54,8 @@ const CurriculumItem = (props: Props) => {
   };
 
   const isFileExists = subFolder && listFiles.length > 0;
+  const isFileDownloaded = (file: string) =>
+    isFileHasDownloaded(`${baseFilePath}/${file}`);
 
   return (
     <div>
@@ -87,7 +96,10 @@ const CurriculumItem = (props: Props) => {
           {isFileExists ? (
             listFiles.map((file, index) => (
               <div
-                className="flex items-center gap-3 cursor-pointer w-fit pe-8"
+                className={clsx(
+                  "flex items-center gap-3 cursor-pointer w-fit pe-8",
+                  isFileDownloaded(file) && "text-gray-400/80"
+                )}
                 key={index}
                 onClick={() => handleDownloadFile(file)}
               >
