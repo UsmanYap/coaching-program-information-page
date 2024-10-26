@@ -1,28 +1,31 @@
-{
-  "steps": [
-    {
-      "title": "Pengenalan Javascript",
-      "description": "Belajar dasar-dasar Javascript, tools yang digunakan, dan konsep-konsep dasar pemrograman."
-    },
-    {
-      "title": "Pengenalan React.js",
-      "description": "Belajar dasar-dasar React, tools yang digunakan, dan konsep-konsep dasar pemrograman."
-    },
-    {
-      "title": "React.js Lanjutan",
-      "description": "Belajar React Hooks, React Router, dan state management."
-    },
-    {
-      "title": "Pengenalan Javascript",
-      "description": "Belajar dasar-dasar Javascript, tools yang digunakan, dan konsep-konsep dasar pemrograman."
-    },
-    {
-      "title": "Pengenalan React.js",
-      "description": "Belajar dasar-dasar React, tools yang digunakan, dan konsep-konsep dasar pemrograman."
-    },
-    {
-      "title": "React.js Lanjutan",
-      "description": "Belajar React Hooks, React Router, dan state management."
-    }
-  ]
-}
+[
+  {
+    "title": "Pengenalan Javascript",
+    "description": "Belajar dasar-dasar Javascript, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
+    "subFolder": "week1",
+    "listFiles": ["Javascript.docx", "Javascript.pptx", "Javascript.txt"]
+  },
+  {
+    "title": "Pengenalan React.js",
+    "description": "Belajar dasar-dasar React, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
+    "subFolder": "week2",
+    "listFiles": [
+      "Instalasi React.js.docx",
+      "React.js.docx",
+      "React.js.pptx",
+      "React.js.txt"
+    ]
+  },
+  {
+    "title": "React.js Lanjutan",
+    "description": "Belajar React Hooks, React Router, dan state management.",
+    "subFolder": "week3",
+    "listFiles": ["React.js 2.docx", "React.js 2.pptx"]
+  },
+  {
+    "title": "React.js Lanjutan",
+    "description": "Belajar React Hooks, React Router, dan state management.",
+    "subFolder": "",
+    "listFiles": []
+  }
+]

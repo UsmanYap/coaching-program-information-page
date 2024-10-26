@@ -12,6 +12,7 @@ export default defineConfig({
       "@common": path.resolve(__dirname, "./src/common"),
       "@state": path.resolve(__dirname, "./src/state"),
       "@data": path.resolve(__dirname, "./src/_data"),
+      "@public": path.resolve(__dirname, "./public"),
     },
   },
 });

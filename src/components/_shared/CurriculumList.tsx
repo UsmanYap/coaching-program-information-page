@@ -1,16 +1,30 @@
 import Appear from "@common/components/Animated/Appear";
 import LineAppear from "@common/components/Animated/LineAppear";
-import inject from "@common/utils/inject";
-import { CurriculumItemContent } from "@common/types";
-import CurriculumItem from "./A1_CurriculumItem";
+import { CurriculumData, Screens, Subject } from "@common/types";
+import { inject } from "@common/utils/inject";
+import CurriculumItem from "./CurriculumItem";
 
-const CurriculumList = () => {
-  const steps: CurriculumItemContent[] = inject("webCurriculum", "steps");
+interface Props {
+  subject: Subject;
+}
+
+const CurriculumList = (props: Props) => {
+  const { subject } = props;
+
+  const curriculumMap = {
+    web: "webCurriculum",
+    mobile: "mobileCurriculum",
+    game: "gameCurriculum",
+  };
+
+  const data = inject<CurriculumData[]>(curriculumMap[subject] as Screens);
+
+  console.log(data);
 
   return (
     <div className="flex h-full">
       <div className="mx-auto mt-5 flex flex-col gap-4 text-white overflow-y-scroll w-full">
-        {steps.map((item, index) => (
+        {data.map((item, index) => (
           <div
             key={index}
             className="relative flex items-start px-4 w-full text-left cursor-pointer"
@@ -23,7 +37,7 @@ const CurriculumList = () => {
             </Appear>
 
             {/* Vertical Line */}
-            {index + 1 !== steps.length && (
+            {index + 1 !== data.length && (
               <LineAppear
                 direction="vertical"
                 delay={(index + 1) * 0.5}
@@ -32,7 +46,7 @@ const CurriculumList = () => {
               />
             )}
 
-            <CurriculumItem item={item} index={index} />
+            <CurriculumItem data={item} index={index} subject={subject} />
           </div>
         ))}
       </div>

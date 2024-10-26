@@ -1,8 +1,11 @@
 import BounceIn from "@common/components/Animated/BounceIn";
 import DiagonalAppear from "@common/components/Animated/DiagonalAppear";
-import inject from "@common/utils/inject";
+import { IntroductionData } from "@common/types";
+import { inject } from "@common/utils/inject";
 
 const WelcomeText = () => {
+  const angkatan = inject<IntroductionData>("introduction").angkatan;
+  
   return (
     <div className="flex h-full">
       <div className="text-white m-auto text-center flex flex-col gap-10">
@@ -25,9 +28,7 @@ const WelcomeText = () => {
                 <span className="text-3xl">UKM</span>
                 <span className="-mt-3">{"<Programming />"}</span>
               </div>
-              <span className="-mt-1 text-xl">
-                - {inject("introduction", "angkatan")} -
-              </span>
+              <span className="-mt-1 text-xl">- {angkatan} -</span>
             </div>
 
             {/* Black Text Layer */}
@@ -36,9 +37,7 @@ const WelcomeText = () => {
                 <span className="text-3xl">UKM</span>
                 <span className="-mt-3">{"<Programming />"}</span>
               </div>
-              <span className="-mt-1 text-xl">
-                - {inject("introduction", "angkatan")} -
-              </span>
+              <span className="-mt-1 text-xl">- {angkatan} -</span>
             </div>
           </section>
         </DiagonalAppear>

@@ -10,6 +10,7 @@
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
+    "esModuleInterop": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
@@ -25,7 +26,8 @@
       "@assets/*": ["./src/assets/*"],
       "@common/*": ["./src/common/*"],
       "@state/*": ["./src/state/*"],
-      "@data/*": ["./src/_data/*"]
+      "@data/*": ["./src/_data/*"],
+      "@public/*": ["./public/*"]
     }
   },
   "include": ["src"]

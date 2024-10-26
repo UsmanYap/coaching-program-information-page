@@ -1,16 +1,20 @@
-{
-  "steps": [
-    {
-      "title": "Pengenalan Unity",
-      "description": "Belajar dasar-dasar Unity, tools yang digunakan, dan konsep-konsep dasar pemrograman."
-    },
-    {
-      "title": "Pengenalan C#",
-      "description": "Belajar dasar-dasar C#, tools yang digunakan, dan konsep-konsep dasar pemrograman."
-    },
-    {
-      "title": "Unity Lanjutan",
-      "description": "Belajar Unity Physics, Unity Animation, dan Unity UI."
-    }
-  ]
-}
+[
+  {
+    "title": "Pengenalan Unity",
+    "description": "Belajar dasar-dasar Unity, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
+    "subFolder": "",
+    "listFiles": []
+  },
+  {
+    "title": "Pengenalan C#",
+    "description": "Belajar dasar-dasar C#, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
+    "subFolder": "",
+    "listFiles": []
+  },
+  {
+    "title": "Unity Lanjutan",
+    "description": "Belajar Unity Physics, Unity Animation, dan Unity UI.",
+    "subFolder": "",
+    "listFiles": []
+  }
+]

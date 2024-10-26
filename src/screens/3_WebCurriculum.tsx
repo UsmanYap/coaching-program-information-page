@@ -1,9 +1,9 @@
-import CurriculumList from "@components/3-WebCurriculum/A_CurriculumList";
 import BackgroundLogo from "@components/_shared/BackgroundLogo";
 import Footer from "@components/_shared/Footer";
 import ScreenTitle from "@components/_shared/ScreenTitle";
 import { CiGlobe } from "react-icons/ci";
 import webDev from "@assets/webDev.webp";
+import CurriculumList from "@components/_shared/CurriculumList";
 
 const WebCurriculum = () => {
   return (
@@ -14,7 +14,7 @@ const WebCurriculum = () => {
       />
 
       <div className="h-full overflow-hidden">
-        <CurriculumList />
+        <CurriculumList subject="web" />
       </div>
       <div className="mt-auto">
         <Footer

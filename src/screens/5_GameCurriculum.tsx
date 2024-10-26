@@ -1,9 +1,9 @@
-import CurriculumList from "@components/5-GameCurriculum/A_CurriculumList";
 import BackgroundLogo from "@components/_shared/BackgroundLogo";
 import Footer from "@components/_shared/Footer";
 import ScreenTitle from "@components/_shared/ScreenTitle";
 import { IoGameController } from "react-icons/io5";
 import gameDev from "@assets/gameDev.webp";
+import CurriculumList from "@components/_shared/CurriculumList";
 
 const GameCurriculum = () => {
   return (
@@ -13,7 +13,7 @@ const GameCurriculum = () => {
         icon={<IoGameController className="w-8 h-8" />}
       />
       <div className="h-full overflow-hidden">
-        <CurriculumList />
+        <CurriculumList subject="game" />
       </div>
       <div className="mt-auto">
         <Footer

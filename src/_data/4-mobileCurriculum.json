@@ -1,17 +1,21 @@
-{
-  "steps": [
-    {
-      "title": "Pengenalan Dart",
-      "description": "Belajar dasar-dasar Dart, tools yang digunakan, dan konsep-konsep dasar pemrograman."
-    },
-    {
-      "title": "Pengenalan Flutter",
-      "description": "Belajar dasar-dasar Flutter, tools yang digunakan, dan konsep-konsep dasar pemrograman."
-    },
+[
+  {
+    "title": "Pengenalan Dart",
+    "description": "Belajar dasar-dasar Dart, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
+    "subFolder": "",
+    "listFiles": []
+  },
+  {
+    "title": "Pengenalan Flutter",
+    "description": "Belajar dasar-dasar Flutter, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
+    "subFolder": "",
+    "listFiles": []
+  },
 
-    {
-      "title": "Flutter Lanjutan",
-      "description": "Belajar Flutter Layout, Flutter Navigation, dan Flutter State Management."
-    }
-  ]
-}
+  {
+    "title": "Flutter Lanjutan",
+    "description": "Belajar Flutter Layout, Flutter Navigation, dan Flutter State Management.",
+    "subFolder": "",
+    "listFiles": []
+  }
+]

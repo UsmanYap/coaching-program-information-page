@@ -1,9 +1,9 @@
-import CurriculumList from "@components/4-MobileCurriculum/A_CurriculumList";
 import BackgroundLogo from "@components/_shared/BackgroundLogo";
 import Footer from "@components/_shared/Footer";
 import ScreenTitle from "@components/_shared/ScreenTitle";
 import { FaMobileAlt } from "react-icons/fa";
 import mobileDev from "@assets/mobileDev.webp";
+import CurriculumList from "@components/_shared/CurriculumList";
 
 const MobileCurriculum = () => {
   return (
@@ -13,7 +13,7 @@ const MobileCurriculum = () => {
         icon={<FaMobileAlt className="w-8 h-8" />}
       />
       <div className="h-full overflow-hidden">
-        <CurriculumList />
+        <CurriculumList subject="mobile" />
       </div>
       <div className="mt-auto">
         <Footer
