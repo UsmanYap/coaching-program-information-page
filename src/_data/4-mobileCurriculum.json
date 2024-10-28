@@ -1,56 +1,50 @@
 [
   {
-    "title": "Pengenalan Dart",
+    "title": "Dasar Flutter",
     "description": "Belajar dasar-dasar Dart, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
     "subFolder": "week1",
-    "listFiles": ["Dart_Introduction.docx", "Dart_Introduction.pptx"]
+    "listFiles": ["1-dasar-flutter.docx"]
   },
   {
-    "title": "Dasar-dasar Pemrograman",
+    "title": "Widget Flutter 1",
     "description": "Memahami konsep dasar pemrograman seperti variabel, tipe data, dan kontrol alur.",
     "subFolder": "week2",
-    "listFiles": ["Programming_Basics.docx", "Programming_Basics.pptx"]
+    "listFiles": ["2-widget-flutter-1.docx"]
   },
   {
-    "title": "Pemrograman Berorientasi Objek",
+    "title": "Codelab 1",
     "description": "Belajar konsep OOP seperti kelas, objek, pewarisan, dan enkapsulasi.",
     "subFolder": "week3",
-    "listFiles": ["OOP_Basics.docx", "OOP_Basics.pptx"]
+    "listFiles": ["3-codelab-1.docx"]
   },
   {
-    "title": "Pengenalan Flutter",
+    "title": "Widget Flutter 2",
     "description": "Belajar dasar-dasar Flutter, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
     "subFolder": "week4",
-    "listFiles": ["Flutter_Introduction.docx", "Flutter_Introduction.pptx"]
+    "listFiles": ["4-widget-flutter-2.docx"]
   },
   {
-    "title": "Flutter Layout dan Navigation",
+    "title": "Codelab 2",
     "description": "Belajar cara membuat layout dan melakukan navigasi di Flutter.",
     "subFolder": "week5",
-    "listFiles": [
-      "Flutter_Layout_Navigation.pptx",
-      "Flutter_Layout_Navigation.pptx"
-    ]
+    "listFiles": ["5-codelab-2.docx"]
   },
   {
-    "title": "Mengonsumsi API di Flutter",
+    "title": "Widget Flutter 3",
     "description": "Belajar cara mengonsumsi API di Flutter untuk mengambil dan mengirim data.",
     "subFolder": "week6",
-    "listFiles": [
-      "Flutter_API_Consumption.docx",
-      "Flutter_API_Consumption.pptx"
-    ]
+    "listFiles": ["6-widget-flutter-3.docx"]
   },
   {
-    "title": "Flutter State Management dengan GetX",
+    "title": "Codelab 3",
     "description": "Belajar cara mengelola state di Flutter menggunakan GetX.",
     "subFolder": "week7",
-    "listFiles": ["Flutter_GetX.docx", "Flutter_GetX.pptx"]
+    "listFiles": ["7-codelab-3.docx"]
   },
   {
-    "title": "Capstone Project",
+    "title": "Codelab 4",
     "description": "Membuat proyek aplikasi mobile sederhana menggunakan Flutter dan GetX.",
     "subFolder": "week8",
-    "listFiles": ["Capstone_Project_Guide.docx", "Capstone_Project_Guide.pptx"]
+    "listFiles": ["8-codelab-4.docx"]
   }
 ]
