@@ -1,0 +1,123 @@
+const angka = 10;
+var huruf = "abcde";
+let isValid = true;
+
+const angka = 10;
+let isValid = true;
+
+angka = 20; // error
+isValid = false // tidak error
+
+if (true) {
+  const angka = 10;
+  var huruf = "abcde";
+  let isValid = true;
+
+  console.log(angka); // 10
+  console.log(huruf); // "abcde"
+  console.log(isValid); // true
+  
+  if (true) {
+    console.log(angka); // 10
+    console.log(huruf); // "abcde"
+    console.log(isValid); // true
+  }
+}
+console.log(angka); // error
+console.log(huruf); // "abcde"
+console.log(isValid); // error
+
+
+console.log(`${angka} adalah angka negatif`)
+
+
+const angka = 10
+
+if (angka < 0) {
+  console.log(angka + " adalah angka negatif")
+  
+} else if (angka == 0) {
+  console.log(angka + " adalah angka nol")
+  
+} else {
+  console.log(angka + " adalah angka positif")
+}
+
+
+let nama = "Nama saya Udin"
+
+console.log(nama.length) // 14
+console.log(nama.toLowerCase()) // nama saya udin
+console.log(nama.toUpperCase()) // NAMA SAYA UDIN
+console.log(nama + " Keren") // Nama saya Udin Keren
+console.log(nama.replace("Udin", "John")) // Nama saya John
+console.log(nama.slice(5)) // saya Udin
+console.log(nama.slice(-4)) // Udin
+console.log(nama.slice(0, 12)) // Nama saya Ud
+console.log(nama.substring(0, 12)) // Udin
+console.log(nama.split(' ')) // ['Nama', 'saya', 'Udin']
+
+
+for (let i = 0; i < 5; i++) {
+    console.log("Perulangan ke-" + i);
+}
+
+let i = 0;
+while (i < 5) {
+    console.log("Perulangan ke-" + i);
+    i++;
+}
+
+
+let angka = [1, 2, 3, 4, 5];
+let buah = ["apel", "mangga", "pisang"];
+
+let buah = ["apel", "mangga", "pisang"];
+console.log(buah[0]); // Output: "apel"
+console.log(buah[1]); // Output: "mangga"
+
+let buah = ["apel", "mangga", "pisang"];
+console.log(buah.length); // Output: 3
+
+let buah = ["apel", "mangga", "pisang"];
+buah.push("jeruk"); // Menambahkan "jeruk" ke array
+buah[1] = "stroberi"; // Mengubah nilai indeks ke-1
+buah.pop(); // Menghapus elemen terakhir ("jeruk")
+
+
+
+let orang = {
+    nama: "John",
+    usia: 30,
+    alamat: "Jl. Contoh No. 123",
+};
+
+console.log(orang.nama); // Output: "John"
+console.log(orang['usia']); // Output: 30
+orang.pekerjaan = "Insinyur"; // Menambahkan properti "pekerjaan" ke objek
+orang.sapa(); // Memanggil metode "sapa" yang mencetak pesan sapaan
+
+let mahasiswa = {
+    nama: "Alice",
+    alamat: {
+        jalan: "Jl. Contoh No. 456",
+        kota: "Bandung"
+    }
+};
+
+
+function sapa(nama) {
+    console.log("Halo, " + nama + "!");
+}
+sapa("Alice"); // Output: "Halo, Alice!"
+
+function tambah(a, b) {
+    return a + b;
+}
+let hasil = tambah(5, 3); // hasil akan berisi 8
+
+
+
+
+
+
