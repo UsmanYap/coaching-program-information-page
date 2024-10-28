@@ -1,75 +1,50 @@
-# Coaching Program Information Page
+# React + TypeScript + Vite
 
-## How to add materi?
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Ada dua hal yang perlu diperhatikan untuk menambahkan file:
+Currently, two official plugins are available:
 
-1. update json pada [src/\_data](src/_data/) untuk menampilkan materi pada web
-2. update file pada [public/materi](public/materi/) agar dapat didownload
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Pada folder [public/materi](public/materi/), hanya ada boleh 3 main folder, yaitu `web`, `mobile`, dan `game`.
-Lalu masing-masing sub-folder pada ketiga folder utama tersebut, ditentukan sesuai dengan data yang ditulis pada [src/\_data](src/_data/).
+## Expanding the ESLint configuration
 
-#### Contoh
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-Untuk menambahkan materi pada bidang Web, buka file [src/\_data/3-webCurriculum.json](src/_data/3-webCurriculum.json), lalu ikuti format yang ada, seperti:
+- Configure the top-level `parserOptions` property like this:
 
-```json
-[
-  {
-    "title": "Pengenalan Javascript",
-    "description": "Belajar dasar-dasar Javascript, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
-    "subFolder": "week1",
-    "listFiles": ["Javascript.docx", "Javascript.pptx", "Javascript.txt"]
-  }
-  {
-    "title": "React.js Lanjutan",
-    "description": "Belajar React Hooks, React Router, dan state management.",
-    "subFolder": "", // contoh jika belum ada materi
-    "listFiles": []
-  }
-]
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
 ```
 
-Untuk contoh diatas, berarti pada [public/materi](public/materi/), harus ada main folder `web` dan subfolder `week1`, jadi seperti ini: [public/materi/web/week1](public/materi/web/week1/), dan isi dari sub-folder tersebut harus sesuai dengan yang didaftarkan pada `listFiles` json diatas. Jika belum ada, maka kosongkan seperti contoh data kedua.
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-Note: Steps yang ditampilkan akan sesuai dengan format json yang dibuat (dari atas kebawah), begitu juga dengan posisi penamaan file pada property `listFiles`.
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
 
-Note: Pastikan `subFolder` dan `listFiles` memiliki penamaan yang sama dengan folder dan file aslinya, karena ini case sensitive.
-
-Setelah selesai, lakukan testing dengan melakukan download pada file, lalu PASTIKAN DENGAN MEMBUKA FILENYA, karena jika terjadi kesalahan pada nama file yang tidak cocok, browser akan tetap melakukan download, namun akan menjadi file kosongan (belum ada error handling untuk not exists file).
-
-## Development Setup
-
-1. Use [Bun](https://bun.sh/) as a runtime.
-
-```bash
-npm install -g bun
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
 ```
-
-2. Run this command to start develop:
-
-```bash
-bun install # for the first time
-```
-
-```bash
-bun run dev # for continous dev
-```
-
-3. Before push, make sure to run:
-
-```bash
-bun run lint
-```
-
-to check any eslint error, and run:
-
-```bash
-bun run build
-bun run preview
-```
-
-to check for production web (THIS IS A MUST!).
-
-4. PR to master branch from your created branch, and wait for a review and merge from product owner.
