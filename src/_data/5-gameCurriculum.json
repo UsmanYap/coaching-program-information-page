@@ -2,49 +2,19 @@
   {
     "title": "Pengenalan Unity",
     "description": "Belajar dasar-dasar Unity, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
-    "subFolder": "week1",
-    "listFiles": ["Unity_Introduction.docx", "Unity_Introduction.pptx"]
+    "subFolder": "",
+    "listFiles": []
   },
   {
     "title": "Pengenalan C#",
     "description": "Belajar dasar-dasar C#, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
-    "subFolder": "week2",
-    "listFiles": ["CSharp_Introduction.docx", "CSharp_Introduction.pptx"]
-  },
-  {
-    "title": "Dasar-dasar Pemrograman",
-    "description": "Memahami konsep dasar pemrograman seperti variabel, tipe data, dan kontrol alur.",
-    "subFolder": "week3",
-    "listFiles": ["Programming_Basics.docx", "Programming_Basics.pptx"]
-  },
-  {
-    "title": "Pemrograman Berorientasi Objek",
-    "description": "Belajar konsep OOP seperti kelas, objek, pewarisan, dan enkapsulasi.",
-    "subFolder": "week4",
-    "listFiles": ["OOP_Basics.docx", "OOP_Basics.pptx"]
+    "subFolder": "",
+    "listFiles": []
   },
   {
     "title": "Unity Lanjutan",
     "description": "Belajar Unity Physics, Unity Animation, dan Unity UI.",
-    "subFolder": "week5",
-    "listFiles": ["Unity_Advanced.docx", "Unity_Advanced.pptx"]
-  },
-  {
-    "title": "Membuat Game Sederhana",
-    "description": "Langkah-langkah membuat game sederhana dengan Unity.",
-    "subFolder": "week6",
-    "listFiles": ["Simple_Game_Creation.docx", "Simple_Game_Creation.pptx"]
-  },
-  {
-    "title": "Pengujian dan Debugging",
-    "description": "Belajar cara menguji dan debugging game di Unity.",
-    "subFolder": "week7",
-    "listFiles": ["Testing_Debugging.docx", "Testing_Debugging.pptx"]
-  },
-  {
-    "title": "Capstone Project",
-    "description": "Membuat proyek game sederhana menggunakan Unity.",
-    "subFolder": "week8",
-    "listFiles": ["Capstone_Project_Guide.docx", "Capstone_Project_Guide.pptx"]
+    "subFolder": "",
+    "listFiles": []
   }
 ]
