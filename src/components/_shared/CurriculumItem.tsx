@@ -23,20 +23,22 @@ const CurriculumItem = (props: Props) => {
   const [fileToDownload, setFileToDownload] = useState<string | null>(null);
   const [iconState, setIconState] = useState<IconState>("idle");
   const [validFiles, setValidFiles] = useState<ValidFile[]>([]);
+  const [isFetched, setIsFetched] = useState(false);
 
   const baseFilePath = `materi/${subject}/${subFolder}`;
 
   useEffect(() => {
-    if (dropdownState === "opened" && validFiles.length === 0) {
+    if (dropdownState === "fetching" && validFiles.length === 0 && !isFetched) {
+      setIsFetched(true);
       setDropdownState("loading");
       validateFiles(baseFilePath, listFiles).then((files) => {
         setValidFiles(files);
-        setDropdownState((prevState) =>
-          prevState === "loading" ? "opened" : prevState
-        );
+        setTimeout(() => {
+          setDropdownState("opened");
+        }, 500);
       });
     }
-  }, [dropdownState, baseFilePath, listFiles, validFiles.length]);
+  }, [dropdownState]);
 
   const handleDownloadFile = async (file: string) => {
     setFileToDownload(file);
@@ -53,6 +55,14 @@ const CurriculumItem = (props: Props) => {
       setIconState("idle");
       setFileToDownload(null);
     }, 2000);
+  };
+
+  const handleDropdown = () => {
+    if (!isFetched) {
+      setDropdownState("fetching");
+    } else {
+      setDropdownState((prev) => (prev === "opened" ? "closed" : "opened"));
+    }
   };
 
   const iconStateMap = {
@@ -74,7 +84,7 @@ const CurriculumItem = (props: Props) => {
           "flex pb-2 ms-1 ps-3 hover:bg-zinc-700/20 transition duration-150 rounded-md",
           dropdownState !== "closed" && "bg-zinc-700/20"
         )}
-        onClick={() => setDropdownState(isDropdownOpened ? "closed" : "opened")}
+        onClick={handleDropdown}
       >
         {/* Title & Description */}
         <div className="w-full">
@@ -136,6 +146,6 @@ const CurriculumItem = (props: Props) => {
 };
 
 type IconState = "idle" | "downloading" | "success" | "failed";
-type DropdownState = "closed" | "opened" | "loading";
+type DropdownState = "closed" | "fetching" | "opened" | "loading";
 
 export default CurriculumItem;
