@@ -31,10 +31,12 @@ const CurriculumItem = (props: Props) => {
       setDropdownState("loading");
       validateFiles(baseFilePath, listFiles).then((files) => {
         setValidFiles(files);
-        setDropdownState("opened");
+        setDropdownState((prevState) =>
+          prevState === "loading" ? "opened" : prevState
+        );
       });
     }
-  }, [dropdownState, validFiles.length]);
+  }, [dropdownState, baseFilePath, listFiles, validFiles.length]);
 
   const handleDownloadFile = async (file: string) => {
     setFileToDownload(file);
