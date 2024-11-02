@@ -29,12 +29,12 @@ const CurriculumItem = (props: Props) => {
   useEffect(() => {
     if (dropdownState === "opened" && validFiles.length === 0) {
       setDropdownState("loading");
-      validateFiles(baseFilePath, listFiles).then((validFiles) => {
-        setTimeout(() => setDropdownState("opened"), 500);
-        setValidFiles(validFiles);
+      validateFiles(baseFilePath, listFiles).then((files) => {
+        setValidFiles(files);
+        setDropdownState("opened");
       });
     }
-  }, [dropdownState]);
+  }, [dropdownState, validFiles.length]);
 
   const handleDownloadFile = async (file: string) => {
     setFileToDownload(file);
