@@ -1,15 +1,8 @@
-import { ValidFile } from "@common/types";
-
-export const isFileHasDownloaded = (
-  basePath: string,
-  file: ValidFile
-): boolean => {
-  const fileItem = `${basePath}/${file.fileName} (${file.lastModified})`;
-
+export const isFileHasDownloaded = (file: string): boolean => {
   const downloadedFiles = localStorage.getItem("downloadedFiles");
   if (downloadedFiles) {
     const files = JSON.parse(downloadedFiles);
-    return files.includes(fileItem);
+    return files.includes(file);
   }
 
   return false;

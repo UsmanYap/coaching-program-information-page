@@ -19,8 +19,3 @@ export type Subject = "web" | "mobile" | "game";
 export type IntroductionData = {
   angkatan: string;
 };
-
-export type ValidFile = {
-  fileName: string;
-  lastModified: string;
-};
