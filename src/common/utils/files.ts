@@ -1,4 +1,3 @@
-import axios from "axios";
 import { ValidFile } from "@common/types";
 import { addDownloadedFile } from "./downloadedFileHistory";
 import moment from "moment";
@@ -13,21 +12,17 @@ export const validateFiles = async (
 
   const validFiles = await Promise.all(
     fileName.map(async (file) => {
-      try {
-        const res = await axios.head(`${basePath}/${file}`);
-        const lastModified = res.headers["last-modified"];
+      const res = await fetch(`${basePath}/${file}`, { method: "HEAD" });
+      const lastModified = res.headers.get("last-modified");
 
-        if (lastModified) {
-          const parsedLastModified = moment(lastModified).format(
-            "HH:mm:ss, DD-MM-YYYY"
-          );
-          return {
-            fileName: file,
-            lastModified: parsedLastModified,
-          };
-        }
-      } catch (error) {
-        console.error("Error fetching file headers:", error);
+      if (lastModified !== null) {
+        const parsedLastModified = moment(lastModified).format(
+          "HH:mm:ss, DD-MM-YYYY"
+        );
+        return {
+          fileName: file,
+          lastModified: parsedLastModified,
+        };
       }
 
       return null;
@@ -42,12 +37,12 @@ export const downloadFile = async (
   fileName: string
 ): Promise<boolean> => {
   try {
-    const res = await axios.head(filePath);
-    if (res.status !== 200) {
+    const res = await fetch(filePath, { method: "GET" });
+    if (!res.ok) {
       throw new Error("File not found");
     }
 
-    const lastModified = res.headers["last-modified"];
+    const lastModified = res.headers.get("last-modified");
     if (!lastModified) {
       return false;
     }
@@ -58,13 +53,11 @@ export const downloadFile = async (
     addDownloadedFile(`${filePath} (${parsedLastModified})`);
 
     const link = document.createElement("a");
-    const url = URL.createObjectURL(res.data);
-    link.href = url;
+    link.href = filePath;
     link.download = fileName;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-    URL.revokeObjectURL(url);
   } catch (err) {
     console.error("File download failed:", err);
     return false;
