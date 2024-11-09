@@ -1,50 +1,58 @@
 [
   {
-    "title": "Dasar Flutter",
-    "description": "Belajar dasar-dasar Dart, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
+    "title": "Kenalan dengan Dart dan Flutter",
+    "description": "Dasar-dasar Dart dan instalasi Flutter dengan video tutorial interaktif. Latihan di DartPad. Kuis di akhir pertemuan.",
     "subFolder": "week1",
-    "listFiles": ["1-dasar-flutter.docx"]
+    "listFiles": [
+      "1-flutter-dan-dart.pptx",
+      "1-flutter-dan-dart.pdf",
+      "1-instalasi-flutter.pdf"
+    ]
   },
   {
-    "title": "Widget Flutter 1",
-    "description": "Memahami konsep dasar pemrograman seperti variabel, tipe data, dan kontrol alur.",
+    "title": "Dart Lebih Dalam",
+    "description": "Pelajari lebih lanjut tentang Dart, termasuk function, list, map, class, dan object-oriented programming. Latihan di DartPad.",
     "subFolder": "week2",
-    "listFiles": ["2-widget-flutter-1.docx"]
+    "listFiles": ["2-list-map.pdf", "2-function.pdf", "2-oop.pdf", "2-kuis.txt"]
   },
   {
-    "title": "Codelab 1",
-    "description": "Belajar konsep OOP seperti kelas, objek, pewarisan, dan enkapsulasi.",
+    "title": "Widget Playground",
+    "description": "Eksplorasi widget dasar Flutter seperti Text, Image, Container, Row, dan Column dalam menyusun layout melalui codelab interaktif di DartPad.",
     "subFolder": "week3",
-    "listFiles": ["3-codelab-1.docx"]
+    "listFiles": [
+      "3-widget-playground.pdf",
+      "3-widget-playground.txt",
+      "3-kalkulator.txt"
+    ]
   },
   {
-    "title": "Widget Flutter 2",
-    "description": "Belajar dasar-dasar Flutter, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
+    "title": "Layout dan Styling Challenge",
+    "description": "Buat replika UI aplikasi populer (misalnya, Instagram) dengan widget layout dan styling.",
     "subFolder": "week4",
-    "listFiles": ["4-widget-flutter-2.docx"]
+    "listFiles": []
   },
   {
-    "title": "Codelab 2",
-    "description": "Belajar cara membuat layout dan melakukan navigasi di Flutter.",
+    "title": "State Management Seru dengan GetX",
+    "description": "Perkenalkan GetX dengan aplikasi game sederhana. Pelajari state management dengan cara yang menyenangkan!",
     "subFolder": "week5",
-    "listFiles": ["5-codelab-2.docx"]
+    "listFiles": []
   },
   {
-    "title": "Widget Flutter 3",
-    "description": "Belajar cara mengonsumsi API di Flutter untuk mengambil dan mengirim data.",
+    "title": "Kuasai GetX Navigation",
+    "description": "Buat aplikasi multi-page dengan GetX. Eksplorasi berbagai jenis transisi halaman.",
     "subFolder": "week6",
-    "listFiles": ["6-widget-flutter-3.docx"]
+    "listFiles": []
   },
   {
-    "title": "Codelab 3",
-    "description": "Belajar cara mengelola state di Flutter menggunakan GetX.",
+    "title": "Integrasi API",
+    "description": "Ambil data dari API buku Open Library. Tampilkan data buku (judul, penulis, cover) di aplikasi.",
     "subFolder": "week7",
-    "listFiles": ["7-codelab-3.docx"]
+    "listFiles": []
   },
   {
-    "title": "Codelab 4",
-    "description": "Membuat proyek aplikasi mobile sederhana menggunakan Flutter dan GetX.",
+    "title": "Capstone Project: Start Your Engines!",
+    "description": "Penjelasan detail tentang capstone project. Pendampingan dan konsultasi untuk memulai project.",
     "subFolder": "week8",
-    "listFiles": ["8-codelab-4.docx"]
+    "listFiles": []
   }
 ]
