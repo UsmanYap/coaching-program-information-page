@@ -1,49 +1,54 @@
 [
   {
-    "title": "Pengenalan Unity",
-    "description": "Belajar dasar-dasar Unity, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
+    "title": "Selamat Datang di Dunia Unity!",
+    "description": "Mengenal Unity,  game engine  powerful untuk membuat game impianmu!  Kita akan menjelajahi antarmuka Unity,  membuat project pertama,  dan berkenalan dengan dasar-dasar game development.",
     "subFolder": "week1",
-    "listFiles": []
+    "listFiles": [
+      "Pengenalan_Unity.pdf",
+      "Unity.pptx",
+      "Penjelasan_PPT_Unity.pdf",
+      "Pengenalan_Godot.pdf"
+    ]
   },
   {
-    "title": "Pengenalan C#",
-    "description": "Belajar dasar-dasar C#, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
+    "title": "C#: Bahasa Pemrograman untuk Game",
+    "description": "C# adalah bahasa yang akan menghidupkan game-mu!  Pelajari sintaks dasar C#,  variabel,  tipe data,  operator,  dan kontrol alur.  Siap menjadi  game programmer  handal?",
     "subFolder": "week2",
-    "listFiles": []
+    "listFiles": ["Dasar-Dasar_C_Sharp.pdf", "C_Sharp_Sintaks.txt"]
   },
   {
-    "title": "Dasar-dasar Pemrograman",
-    "description": "Memahami konsep dasar pemrograman seperti variabel, tipe data, dan kontrol alur.",
+    "title": "Dasar-Dasar Pemrograman dengan C#",
+    "description": "Perdalam  skill  C#-mu dengan konsep pemrograman  esensial,  seperti percabangan,  perulangan,  dan fungsi.  Latih logikamu dan  build  fondasi  programming  yang  kuat!",
     "subFolder": "week3",
-    "listFiles": []
+    "listFiles": ["Percabangan_Perulangan.pdf", "Percabangan_Perulangan.txt"]
   },
   {
-    "title": "Pemrograman Berorientasi Objek",
-    "description": "Belajar konsep OOP seperti kelas, objek, pewarisan, dan enkapsulasi.",
+    "title": "Pemrograman Berorientasi Objek (OOP) di C#",
+    "description": "OOP adalah paradigma penting dalam  game development.  Kuasai konsep  class,  object,  inheritance,  dan  encapsulation  untuk  membuat kode yang  terstruktur dan reusable.",
     "subFolder": "week4",
-    "listFiles": []
+    "listFiles": ["OOP.pdf", "OOP.txt"]
   },
   {
-    "title": "Unity Lanjutan",
-    "description": "Belajar Unity Physics, Unity Animation, dan Unity UI.",
+    "title": "Action!  Animasi dan Fisika di Unity",
+    "description": "Berikan  nyawa  pada game-mu dengan animasi dan fisika!  Pelajari cara  menganimasikan  karakter,  menambahkan efek fisika,  dan  membuat  game-mu  lebih  interaktif.",
     "subFolder": "week5",
-    "listFiles": []
+    "listFiles": ["Animasi_dan_Fisika.pdf", "Pembahasan_Tugas.pdf"]
   },
   {
-    "title": "Membuat Game Sederhana",
-    "description": "Langkah-langkah membuat game sederhana dengan Unity.",
+    "title": "Membangun Game Pertamamu",
+    "description": "Saatnya  mewujudkan  ilmu  yang  telah  dipelajari!  Ikuti  langkah demi  langkah  untuk  membangun  game  sederhana  di  Unity.  Rasakan  serunya  menjadi  game developer!",
     "subFolder": "week6",
-    "listFiles": []
+    "listFiles": ["Endless_Runner.pdf", "Endless_Runner_Dengan_Kode.pdf"]
   },
   {
-    "title": "Pengujian dan Debugging",
-    "description": "Belajar cara menguji dan debugging game di Unity.",
+    "title": "Jadilah  Game Developer  Profesional:  Testing  dan  Debugging",
+    "description": "Game  yang  baik  harus  bebas  dari  bug!  Pelajari  teknik  testing  dan  debugging  untuk  memastikan  game-mu  berjalan  lancar  dan  menyenangkan.",
     "subFolder": "week7",
-    "listFiles": []
+    "listFiles": ["Testing_dan_Debugging.pdf"]
   },
   {
-    "title": "Capstone Project",
-    "description": "Membuat proyek game sederhana menggunakan Unity.",
+    "title": "Capstone Project:  Game Developer  Sejati",
+    "description": "Wujudkan  game  impianmu  di  Capstone Project  ini!  Terapkan  semua  skill  yang  telah  dipelajari  untuk  membangun  game  yang  unik  dan  menarik.  Show the world your game dev talent!",
     "subFolder": "week8",
     "listFiles": []
   }

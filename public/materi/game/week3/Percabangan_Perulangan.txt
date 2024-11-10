@@ -1,0 +1,86 @@
+using System;
+
+namespace PercabanganPerulangan
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Percabangan
+            int nyawa = 3;
+            if (nyawa <= 0)
+            {
+                Console.WriteLine("Game Over!");
+            }
+            else if (nyawa == 1)
+            {
+                Console.WriteLine("Awas, nyawa tinggal sedikit!");
+            }
+            else
+            {
+                Console.WriteLine("Lanjutkan permainan!");
+            }
+
+            // Perulangan for
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Musuh ke-" + i + " muncul!");
+            }
+
+            // Perulangan while
+            int waktu = 10;
+            while (waktu > 0)
+            {
+                Console.WriteLine("Waktu tersisa: " + waktu);
+                waktu--;
+            }
+
+            // Perulangan do-while
+            string input;
+            do
+            {
+                Console.WriteLine("Masukkan 'keluar' untuk berhenti:");
+                input = Console.ReadLine();
+            } while (input != "keluar");
+
+            // Fungsi
+            TampilkanPesan("Selamat datang di game!");
+
+            // Nested loop (tabel perkalian)
+            for (int i = 1; i <= 10; i++)
+            {
+                for (int j = 1; j <= 10; j++)
+                {
+                    Console.Write(i * j + "\t");
+                }
+                Console.WriteLine();
+            }
+
+            // Nested if (batu gunting kertas - contoh sederhana)
+            Console.WriteLine("Pilih: batu, gunting, kertas");
+            string pilihanPlayer = Console.ReadLine();
+            string pilihanKomputer = "gunting"; // Contoh, bisa diganti dengan random
+
+            if (pilihanPlayer == pilihanKomputer)
+            {
+                Console.WriteLine("Seri!");
+            }
+            else if (pilihanPlayer == "batu")
+            {
+                if (pilihanKomputer == "gunting")
+                    Console.WriteLine("Player menang!");
+                else
+                    Console.WriteLine("Komputer menang!");
+            }
+            // ... (tambahkan kondisi untuk pilihan "gunting" dan "kertas")
+
+            Console.ReadKey();
+        }
+
+        // Contoh fungsi sederhana
+        static void TampilkanPesan(string pesan)
+        {
+            Console.WriteLine(pesan);
+        }
+    }
+}

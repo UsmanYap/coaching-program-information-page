@@ -1,0 +1,67 @@
+using System;
+
+namespace OOP_di_CSharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Membuat objek Ksatria
+            Ksatria ksatria1 = new Ksatria();
+            ksatria1.nama = "Arthur";
+            ksatria1.nyawa = 100;
+            ksatria1.kekuatan = 20;
+
+            Ksatria ksatria2 = new Ksatria();
+            ksatria2.nama = "Lancelot";
+            ksatria2.nyawa = 80;
+            ksatria2.kekuatan = 25;
+
+            // Simulasi pertarungan
+            Console.WriteLine(ksatria1.nama + " vs. " + ksatria2.nama);
+            while (ksatria1.nyawa > 0 && ksatria2.nyawa > 0)
+            {
+                ksatria2.TerimaDamage(ksatria1.kekuatan);
+                Console.WriteLine(ksatria1.nama + " menyerang " + ksatria2.nama + 
+                                  ", nyawa " + ksatria2.nama + " tersisa " + ksatria2.nyawa);
+
+                if (ksatria2.nyawa > 0)
+                {
+                    ksatria1.TerimaDamage(ksatria2.kekuatan);
+                    Console.WriteLine(ksatria2.nama + " menyerang " + ksatria1.nama + 
+                                      ", nyawa " + ksatria1.nama + " tersisa " + ksatria1.nyawa);
+                }
+            }
+
+            // Menentukan pemenang
+            if (ksatria1.nyawa <= 0)
+            {
+                Console.WriteLine(ksatria2.nama + " menang!");
+            }
+            else
+            {
+                Console.WriteLine(ksatria1.nama + " menang!");
+            }
+
+            Console.ReadKey();
+        }
+    }
+
+    // Class Ksatria
+    class Ksatria
+    {
+        public string nama;
+        public int nyawa;
+        public int kekuatan;
+
+        public void Serang()
+        {
+            // Kode untuk menyerang (bisa ditambahkan efek khusus, dll.)
+        }
+
+        public void TerimaDamage(int damage)
+        {
+            nyawa -= damage;
+        }
+    }
+}
