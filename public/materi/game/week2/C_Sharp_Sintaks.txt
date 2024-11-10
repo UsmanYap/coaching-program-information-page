@@ -1,0 +1,65 @@
+using System;
+
+namespace PengenalanCSharp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // "Hello, World!" di C#
+            Console.WriteLine("Hello, World!");
+
+            // Variabel dan Tipe Data
+            int skor = 100;
+            float kecepatan = 5.5f;
+            string namaPemain = "Joko";
+            bool isGameOver = false;
+
+            // Operator
+            int hasilPenjumlahan = 10 + 5;
+            int hasilPengurangan = 20 - 8;
+            int hasilPerkalian = 5 * 3;
+            float hasilPembagian = 10f / 3f;
+
+            bool isEqual = (10 == 10);
+            bool isNotEqual = (5 != 3);
+            bool isGreater = (20 > 15);
+
+            bool isTrue = true && true;
+            bool isFalse = false || false;
+            bool isNotTrue = !true;
+
+            // Kontrol Alur
+            if (skor > 100)
+            {
+                Console.WriteLine("Selamat! Skor Anda tinggi!");
+            }
+            else if (skor > 50)
+            {
+                Console.WriteLine("Skor Anda lumayan.");
+            }
+            else
+            {
+                Console.WriteLine("Ayo tingkatkan skor Anda!");
+            }
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("Putaran ke-" + (i + 1));
+            }
+
+            // Tugas: Hitung Luas Lingkaran
+            Console.Write("Masukkan jari-jari lingkaran: ");
+            double jariJari = Convert.ToDouble(Console.ReadLine());
+            double luas = Math.PI * jariJari * jariJari;
+            Console.WriteLine("Luas lingkaran: " + luas);
+
+            // Tugas: Sapaan
+            Console.Write("Masukkan nama Anda: ");
+            string nama = Console.ReadLine();
+            Console.WriteLine("Selamat datang, " + nama + "! di dunia game!");
+
+            Console.ReadKey(); // Menunggu input keyboard sebelum program berakhir
+        }
+    }
+}

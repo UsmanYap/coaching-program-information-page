@@ -1,0 +1,64 @@
+// LATIHAN FUNCTION
+
+// 1. Buat function untuk menghitung luas segitiga.
+double luasSegitiga(double alas, double tinggi) {
+  // TODO: Implementasikan function ini
+}
+
+// 2. Buat function untuk mengecek apakah sebuah bilangan prima.
+bool isPrima(int bilangan) {
+  // TODO: Implementasikan function ini
+}
+
+// 3. Buat function untuk membalikkan sebuah string.
+String balikString(String teks) {
+  // TODO: Implementasikan function ini
+}
+
+
+// LATIHAN LIST
+
+// 1. Buat list berisi angka 1 sampai 10.
+// TODO: Implementasikan kode ini
+
+// 2. Tambahkan angka 11 ke dalam list.
+// TODO: Implementasikan kode ini
+
+// 3. Hapus angka 5 dari list.
+// TODO: Implementasikan kode ini
+
+// 4. Urutkan list secara ascending.
+// TODO: Implementasikan kode ini
+
+
+// LATIHAN MAP
+
+// 1. Buat map untuk menyimpan data mahasiswa dengan key NPM dan value nama.
+// TODO: Implementasikan kode ini
+
+// 2. Tambahkan data mahasiswa baru dengan NPM "202301005" dan nama "Dinda".
+// TODO: Implementasikan kode ini
+
+// 3. Hapus data mahasiswa dengan NPM "202301002".
+// TODO: Implementasikan kode ini
+
+// 4. Cek apakah map mengandung mahasiswa dengan NPM "202301003".
+// TODO: Implementasikan kode ini
+
+
+// LATIHAN OOP
+
+// 1. Buat class Hewan dengan atribut nama dan umur.
+// TODO: Implementasikan kode ini
+
+// 2. Tambahkan method bersuara() pada class Hewan.
+// TODO: Implementasikan kode ini
+
+// 3. Buat class Kucing yang mewarisi dari class Hewan.
+// TODO: Implementasikan kode ini
+
+// 4. Override method bersuara() pada class Kucing agar mengembalikan "Meong...".
+// TODO: Implementasikan kode ini
+
+// 5. Buat object dari class Kucing dan panggil method bersuara().
+// TODO: Implementasikan kode ini
