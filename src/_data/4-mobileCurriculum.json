@@ -4,54 +4,50 @@
     "description": "Dasar-dasar Dart dan instalasi Flutter dengan video tutorial interaktif. Latihan di DartPad. Kuis di akhir pertemuan.",
     "subFolder": "week1",
     "listFiles": [
-      "1-flutter-dan-dart.pptx",
-      "1-flutter-dan-dart.pdf",
-      "1-instalasi-flutter.pdf"
+      "Flutter_dan_Dart.pptx",
+      "Flutter_dan_Dart.pdf",
+      "Instalasi_Flutter.pdf"
     ]
   },
   {
     "title": "Dart Lebih Dalam",
     "description": "Pelajari lebih lanjut tentang Dart, termasuk function, list, map, class, dan object-oriented programming. Latihan di DartPad.",
     "subFolder": "week2",
-    "listFiles": ["2-list-map.pdf", "2-function.pdf", "2-oop.pdf", "2-kuis.txt"]
+    "listFiles": ["List_Map.pdf", "Function.pdf", "OOP.pdf", "Kuis.txt"]
   },
   {
-    "title": "Widget Playground",
+    "title": "Widget",
     "description": "Eksplorasi widget dasar Flutter seperti Text, Image, Container, Row, dan Column dalam menyusun layout melalui codelab interaktif di DartPad.",
     "subFolder": "week3",
-    "listFiles": [
-      "3-widget-playground.pdf",
-      "3-widget-playground.txt",
-      "3-kalkulator.txt"
-    ]
+    "listFiles": ["Widget.pdf", "Widget.txt", "Kalkulator.txt"]
   },
   {
-    "title": "Layout dan Styling Challenge",
-    "description": "Buat replika UI aplikasi populer (misalnya, Instagram) dengan widget layout dan styling.",
-    "subFolder": "week4",
-    "listFiles": []
-  },
-  {
-    "title": "State Management Seru dengan GetX",
+    "title": "State Management dengan GetX",
     "description": "Perkenalkan GetX dengan aplikasi game sederhana. Pelajari state management dengan cara yang menyenangkan!",
-    "subFolder": "week5",
+    "subFolder": "week4",
     "listFiles": []
   },
   {
     "title": "Kuasai GetX Navigation",
     "description": "Buat aplikasi multi-page dengan GetX. Eksplorasi berbagai jenis transisi halaman.",
+    "subFolder": "week5",
+    "listFiles": []
+  },
+  {
+    "title": "Asynchronous Programming",
+    "description": "Pelajari cara menjalankan kode tanpa blocking UI,  menangani Future, async/await, dan error handling.  Siap hadapi tantangan asynchronous di Flutter!",
     "subFolder": "week6",
     "listFiles": []
   },
   {
     "title": "Integrasi API",
-    "description": "Ambil data dari API buku Open Library. Tampilkan data buku (judul, penulis, cover) di aplikasi.",
+    "description": "Pelajari cara mengambil data dari API buku Open Library. Tampilkan data buku (judul, penulis, cover) di aplikasi.",
     "subFolder": "week7",
     "listFiles": []
   },
   {
-    "title": "Capstone Project: Start Your Engines!",
-    "description": "Penjelasan detail tentang capstone project. Pendampingan dan konsultasi untuk memulai project.",
+    "title": "Capstone Project",
+    "description": "Mengerjakan proyek aplikasi Flutter dengan menerapkan GetX, navigasi, asynchronous programming, dan integrasi API.",
     "subFolder": "week8",
     "listFiles": []
   }

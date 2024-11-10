@@ -1,58 +1,55 @@
 [
   {
-    "title": "Pengenalan Javascript",
-    "description": "Belajar dasar-dasar Javascript, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
+    "title": "JavaScript Fundamental",
+    "description": "Pelajari fundamental JavaScript,  mulai dari variabel,  percabangan,  perulangan,  hingga  fungsi.  Kenali juga  array  dan  object  di JavaScript!",
     "subFolder": "week1",
-    "listFiles": ["Javascript.docx", "Javascript.pptx", "Javascript.txt"]
+    "listFiles": ["Javascript.pdf", "Javascript.pptx", "Javascript.txt"]
   },
   {
-    "title": "Dasar-dasar Pemrograman",
-    "description": "Memahami konsep dasar pemrograman seperti variabel, tipe data, dan kontrol alur.",
+    "title": "React.js Fundamental",
+    "description": "Pelajari dasar-dasar React.js, termasuk komponen, props, state, dan JSX. ",
     "subFolder": "week2",
-    "listFiles": ["Programming_Basics.docx", "Programming_Basics.pptx"]
-  },
-  {
-    "title": "Pengenalan React.js",
-    "description": "Belajar dasar-dasar React, tools yang digunakan, dan konsep-konsep dasar pemrograman.",
-    "subFolder": "week3",
     "listFiles": [
-      "React.js_installation.docx",
-      "React.js.docx",
+      "Instalasi_React.js.pdf",
+      "React.js.pdf",
       "React.js.pptx",
       "React.js.txt"
     ]
   },
   {
-    "title": "React.js Lanjutan",
-    "description": "Belajar React Hooks dan React Router.",
+    "title": "Consume API",
+    "description": "Kuasai Axios untuk mengambil data dari API dan menampilkannya di aplikasi React-mu.  Praktik langsung dengan  PokeAPI!",
+    "subFolder": "week3",
+    "listFiles": ["Consume_API.pdf", "Consume_API.pptx"]
+  },
+  {
+    "title": "React Router",
+    "description": "Pelajari React Router untuk membuat navigasi antar halaman di aplikasi React.",
     "subFolder": "week4",
-    "listFiles": ["React.js_Advanced.docx", "React.js_Advanced.pptx"]
+    "listFiles": ["React_Router.pdf", "React_Router.pptx"]
+  },
+  {
+    "title": "Bootstrap",
+    "description": "Pelajari Bootstrap,  framework  CSS yang memudahkanmu membangun website  responsive  dan  stylish!",
+    "subFolder": "week5",
+    "listFiles": ["Bootstrap.pdf", "Bootstrap.pptx"]
   },
   {
     "title": "Pengenalan Strapi dan Relasi Tabel Database",
     "description": "Belajar dasar-dasar Strapi, membuat relasi tabel, dan mengelola data.",
-    "subFolder": "week5",
-    "listFiles": ["Strapi_Relation.docx", "Strapi_Relation.pptx"]
-  },
-  {
-    "title": "Mengonsumsi API di React",
-    "description": "Belajar cara mengonsumsi API di React untuk mengambil dan mengirim data.",
     "subFolder": "week6",
-    "listFiles": ["React_API_Consumption.docx", "React_API_Consumption.pptx"]
+    "listFiles": ["Instalasi_Strapi.pdf", "Strapi.pdf"]
   },
   {
-    "title": "State Management dengan React Context dan Custom Hooks",
-    "description": "Belajar cara mengelola state di React menggunakan React Context dan custom hooks.",
+    "title": "Full-Stack React",
+    "description": "Gabungkan  frontend  React dengan  backend  Strapi yang telah kamu buat!  Pelajari cara  fetching  data, menampilkannya di aplikasi,  dan membangun fitur CRUD.",
     "subFolder": "week7",
-    "listFiles": [
-      "React_Context_Custom_Hooks.docx",
-      "React_Context_Custom_Hooks.pptx"
-    ]
+    "listFiles": ["Full_Stack_React.pdf"]
   },
   {
     "title": "Capstone Project",
-    "description": "Membuat proyek aplikasi web full-stack sederhana menggunakan React Vite, Strapi, dan state management dengan React Context dan custom hooks.",
+    "description": "Capstone Project  ini  dirancang  untuk  mengukur  pemahamanmu  tentang  pengembangan  aplikasi  web  full-stack  modern.  Kamu  akan  mempraktikkan  konsep-konsep  penting,  seperti  component-based architecture,  state management,  routing,  consume API,  dan  CRUD.",
     "subFolder": "week8",
-    "listFiles": ["Capstone_Project_Guide.docx", "Capstone_Project_Guide.pptx"]
+    "listFiles": []
   }
 ]
