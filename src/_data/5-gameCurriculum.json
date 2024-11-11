@@ -7,6 +7,7 @@
       "Pengenalan_Unity.pdf",
       "Unity.pptx",
       "Penjelasan_PPT_Unity.pdf",
+      "GameObject_Component_Canvas_UI.pdf",
       "Pengenalan_Godot.pdf"
     ]
   },
@@ -38,7 +39,12 @@
     "title": "Membangun Game Pertamamu",
     "description": "Saatnya  mewujudkan  ilmu  yang  telah  dipelajari!  Ikuti  langkah demi  langkah  untuk  membangun  game  sederhana  di  Unity.  Rasakan  serunya  menjadi  game developer!",
     "subFolder": "week6",
-    "listFiles": ["Endless_Runner.pdf", "Endless_Runner_Dengan_Kode.pdf"]
+    "listFiles": [
+      "Endless_Runner.pdf",
+      "Endless_Runner_Dengan_Kode.pdf",
+      "Rock_Paper_Scissors.pdf",
+      "Crossy_Road.pdf"
+    ]
   },
   {
     "title": "Jadilah  Game Developer  Profesional:  Testing  dan  Debugging",
