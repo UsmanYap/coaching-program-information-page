@@ -1,0 +1,21 @@
+Tema Game: Benteng dengan mekanisme penyamaran objek.
+
+Gameplay:
+Game ini menggabungkan strategi, penyamaran, dan aksi dalam pertempuran dua tim (masing-masing 5 orang). Setiap map memiliki 4 titik akhir (2 titik yang masing-masing dilindungi tim) dan 3 checkpoint. Tujuan utama adalah mengumpulkan poin dengan memasuki titik akhir musuh atau menangkap musuh yang mencoba memasuki titik akhir. Pemain dapat menyamar menjadi objek statis (seperti tong, pohon, dll.) untuk mengelabui musuh, namun tetap bisa bergerak dengan kecepatan terbatas. Terdapat batasan waktu penyamaran sebelum pemain diubah menjadi objek acak. 
+
+Fitur Utama:
+   Penyamaran Objek: Pemain dapat menyamar menjadi berbagai objek statis di map. Penyamaran memiliki batasan waktu dan kecepatan gerak yang lebih lambat.
+   Skill dan Item: Terdapat skill khusus untuk mendeteksi musuh yang menyamar dan item untuk meningkatkan kemampuan, seperti mempercepat lari, meningkatkan penyamaran, atau mendeteksi musuh.
+   Peran dan Kelas: Setiap pemain memiliki peran/kelas dengan kemampuan unik (misal: Pengintai, Penyerang, Pendukung).
+   Penguasaan Titik: Tim mendapatkan poin tambahan jika menguasai checkpoint dalam waktu tertentu.
+   Mode Permainan: Terdapat mode utama (merebut titik akhir), Deathmatch, dan Capture the Flag.
+   Superioritas Penangkapan: Pemain yang terakhir atau baru keluar dari checkpoint terdekat memiliki keunggulan dalam menangkap musuh yang sudah lama keluar dari checkpoint mereka. Di area base hingga checkpoint pertama, pemain pasti bisa menangkap musuh.
+   Tombol Recall: Pemain dapat langsung kembali ke base.
+   Perangkap dan Mekanisme Interaktif: Map dilengkapi dengan perangkap (jebakan beruang, ranjau, dll.) dan objek interaktif (tombol, pintu jebakan, dll.) yang dapat dimanfaatkan pemain.
+   Sistem Peningkatan dan Kustomisasi: Pemain mendapatkan XP untuk meningkatkan level karakter, membuka skill baru, dan meningkatkan atribut. Terdapat juga sistem kustomisasi untuk mengubah penampilan karakter.
+   Komunikasi dan Kerja Sama Tim: Fitur voice chat dan sistem ping untuk komunikasi, serta skill/item yang mendukung kerja sama tim.
+   Tantangan dan Prestasi: Tantangan harian/mingguan dan sistem achievement untuk memotivasi pemain.
+   Leaderboard dan Kompetisi: Leaderboard untuk menampilkan peringkat pemain dan turnamen/kompetisi reguler.
+
+Visual dan Atmosfer:
+Gaya visual game bisa disesuaikan dengan tema map, misalnya cyberpunk untuk map kota futuristik atau fantasy untuk map hutan mistis. Atmosfer game cenderung tegang dan kompetitif, namun tetap diselingi momen-momen seru dan lucu saat pemain berusaha saling mengelabui dengan penyamaran.
