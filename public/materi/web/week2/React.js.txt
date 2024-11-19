@@ -1,5 +1,75 @@
-const UserCard = (props) => {
+// app.jsx
 
+import UserCard from "./component/UserCard";
+import Counter from "./component/Counter";
+
+const App = () => {
+  return (
+    <div>
+      <h1>Daftar Pengguna</h1>
+      <UserCard nama={"Andi"} tahunLahir={1995} />
+      <UserCard nama="Budi" tahunLahir={1990} />
+      <UserCard nama="Citra" tahunLahir={2000} />
+      <Counter />
+    </div>
+  );
+};
+
+export default App;
+
+// import { useState } from "react";
+
+// function App() {
+//   const [name, setName] = useState("");
+
+//   const handleNameChange = (event) => {
+//     setName(event.target.value);
+//   };
+
+//   return (
+//     <div>
+//       <div>Hello {name}!</div>
+//       <input type="text" value={name} onChange={handleNameChange} />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+//counter.jsx (di dalam component)
+
+import { useState, useEffect } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  //   dengan use efffectr
+  useEffect(() => {
+    document.title = `Counter: ${count}`;
+  }, [count]);
+
+  // useEffect(() => {
+  //   document.title = `Counter: ${count}`;
+  // }, []);
+
+  //   tanpa use effect
+  //   document.title = `Counter: ${count}`;
+
+  return (
+    <div>
+      <p>Count : {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+
+export default Counter;
+
+//UserCard.jsx (component)
+
+const UserCard = (props) => {
   const umur = 2023 - props.tahunLahir;
 
   return (
@@ -7,23 +77,33 @@ const UserCard = (props) => {
       <div>Nama: {props.nama}</div>
       <div>Umur: {umur}</div>
     </div>
-  )
-}
+  );
+};
 
-export default UserCard
+export default UserCard;
+
+// import PropTypes from "prop-types";
+
+// const UserCard = (props) => {
+//   const umur = 2023 - props.tahunLahir;
+
+//   return (
+//     <div>
+//       <div>Nama: {props.nama}</div>
+//       <div>Umur: {umur}</div>
+//     </div>
+//   );
+// };
+
+// UserCard.propTypes = {
+//   nama: PropTypes.string.isRequired,
+//   tahunLahir: PropTypes.number.isRequired,
+// };
+
+// export default UserCard;
 
 
-function App() {
-  const [name, setName] = useState('');
 
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  };
 
-  return (
-    <div>
-      <div>Hello {name}!</div>
-      <input type="text" value={name} onChange={handleNameChange} />
-    </div>
-  )
-}
+
+
